@@ -1,0 +1,82 @@
+@use "sass:color";
+
+$color-text-default:    #374151;
+$color-text-light:      #81858a;
+
+$color-primary-light:   #cee3fc;
+
+// Primary Colors
+$color-primary:         #2385ff;
+$color-primary-dark:    color.scale($color-primary, $lightness: -20%);
+
+// Secondary Colors
+$color-secondary:       #757d96;
+$color-secondary-light: color.adjust($color-secondary, $lightness: 10%);
+$color-secondary-dark:  color.scale($color-secondary, $lightness: -20%);
+
+// Accent Colors
+$color-accent:          #fff300;
+$color-accent-light:    color.adjust($color-accent, $lightness: 10%);
+$color-accent-dark:     color.scale($color-accent, $lightness: -20%);
+
+// Tertiary Colors
+$color-tertiary:        #ff6b6b;
+$color-tertiary-light:  color.adjust($color-tertiary, $lightness: 10%);
+$color-tertiary-dark:   color.scale($color-tertiary, $lightness: -20%);
+
+// Background Colors
+$color-background:      #f4f7fc;
+$color-background-light: color.adjust($color-background, $lightness: 10%);
+$color-background-dark:  color.scale($color-background, $lightness: -20%);
+
+// Highlight Colors
+$color-highlight:       #a8d8ff;
+$color-highlight-light: color.adjust($color-highlight, $lightness: 10%);
+$color-highlight-dark:  color.scale($color-highlight, $lightness: -20%);
+
+// Neutral Colors
+$color-white:          #fff;
+$color-black:          #000;
+$color-gray-100:       #f8f9fa;
+$color-gray-200:       #e9ecef;
+$color-gray-300:       #dee2e6;
+$color-gray-400:       #ced4da;
+$color-gray-500:       #adb5bd;
+$color-gray-600:       #6c757d;
+$color-gray-700:       #495057;
+$color-gray-800:       #343a40;
+$color-gray-900:       #212529;
+
+// Semantic Colors
+$color-success:        #28a745;
+$color-warning:        #ffc107;
+$color-error:          #dc3545;
+$color-info:           #17a2b8;
+
+// Font Sizes
+$font-size-xxs:          10px;
+$font-size-xs:           12px;
+$font-size-sm:           14px;
+$font-size-md:           16px;
+$font-size-lg:           20px;
+$font-size-xl:           24px;
+$font-size-xxl:          32px;
+
+// Border Radius
+$border-radius-sm:       4px;
+$border-radius-md:       8px;
+$border-radius-lg:       16px;
+
+// Spacing Scale
+$spacing-xxs:            4px;
+$spacing-xs:             8px;
+$spacing-sm:             16px;
+$spacing-md:             24px;
+$spacing-lg:             32px;
+$spacing-xl:             48px;
+$spacing-xxl:            64px;
+
+// Card variables
+$card-bg-color: #ffffff;
+$card-border-radius: 8px;
+$card-padding: 16px;

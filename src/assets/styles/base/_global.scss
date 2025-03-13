@@ -1,0 +1,19 @@
+html,
+body {
+    direction: rtl;
+    font-family: "iranSans" !important;
+    scroll-behavior: smooth !important;
+    -moz-font-feature-settings: "ss03";
+    -webkit-font-feature-settings: "ss03";
+    font-feature-settings: "ss03";
+}
+
+// .modal-backdrop {
+//     -webkit-backdrop-filter: blur(2px);
+//     backdrop-filter: blur(2px);
+//     background-color: rgba(255, 255, 255, 0);
+// }
+
+// .modal-backdrop.show {
+//     opacity: 0.9;
+// }

@@ -1,0 +1,36 @@
+// 1. Abstracts (Utilities)
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+@use 'abstracts/functions';
+
+// 2. Vendors (Third-party libraries)
+@use 'vendors/tailwind'; //FontAwsome
+
+// 3. Base (Global styles)
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/fonts'; // Font-face declarations
+@use 'base/global';
+
+// 4. Layout (Structural styles)
+@use 'layout/grid';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/sidebar';
+
+// 5. Components (Reusable UI elements)
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/modals';
+@use 'components/forms';
+
+// 6. Pages (Page-specific styles)
+@use 'pages/_home.sass';
+
+// 7. Themes (Theme-specific styles)
+@use 'themes/light';
+@use 'themes/dark';
+
+// 8. Shame (Temporary fixes and hacks)
+// Add your quick fixes and hacks below this line.
+// ------------------------------------------------

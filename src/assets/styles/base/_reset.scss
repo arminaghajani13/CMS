@@ -1,0 +1,181 @@
+/* Reset all margins, paddings, and borders */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'iranSans' !important;
+}
+
+/* Remove list styles (bullets/numbers) */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default hyperlink styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default button styles */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* Reset form elements */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Remove default input styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+}
+
+/* Remove default table spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Make images and media elements responsive */
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Remove default border on images inside links */
+a img {
+  border: none;
+}
+
+/* Reset headings and paragraphs */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Remove default blockquote styles */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+/* Remove default horizontal rule styles */
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 1rem 0;
+}
+
+/* Reset fieldset and legend styles */
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/* Remove default styles for embedded content */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+/* Remove default styles for preformatted text */
+pre {
+  white-space: pre-wrap;
+  font-family: inherit;
+}
+
+/* Remove default styles for code */
+code {
+  font-family: monospace;
+}
+
+/* Remove default styles for superscript and subscript */
+sup,
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Remove default styles for details and summary */
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+/* Remove default styles for hidden elements */
+[hidden] {
+  display: none !important;
+}
+
+/* Remove default styles for focus outlines (optional) */
+:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/*------------------------------------*\
+  #END OF RESET
+\*------------------------------------*/
