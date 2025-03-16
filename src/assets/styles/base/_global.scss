@@ -1,11 +1,17 @@
 html,
 body {
-    direction: rtl;
+    direction: ltr;
     font-family: "iranSans" !important;
     scroll-behavior: smooth !important;
     -moz-font-feature-settings: "ss03";
     -webkit-font-feature-settings: "ss03";
     font-feature-settings: "ss03";
+}
+
+.bodyStructure {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
 }
 
 // .modal-backdrop {
