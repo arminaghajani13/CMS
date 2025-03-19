@@ -9,7 +9,7 @@ export default function topbar() {
         <div className="flex justify-between topbar">
             <div className="topRight">
                 <div className="logoBox">
-                    logo Is here
+                    ExirPooyan
                 </div>
             </div>
             <div className="flex topLeft">

@@ -1,0 +1,12 @@
+// src/assets/styles/components/_cards.scss
+@use '../abstracts/mixins' as mx;
+
+.featureCard {
+    @include mx.card; // Works fine here
+
+        .title {
+            font-weight: 400;
+            margin-bottom: 7px;
+        }
+    
+}

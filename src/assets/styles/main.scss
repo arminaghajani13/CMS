@@ -25,7 +25,8 @@
 @use 'components/forms';
 
 // 6. Pages (Page-specific styles)
-@use 'pages/_home.sass';
+@use 'pages/home';
+@use 'pages/landing';
 
 // 7. Themes (Theme-specific styles)
 @use 'themes/light';

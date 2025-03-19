@@ -1,78 +1,115 @@
 .sidebar {
-    width: 250px;
-    background-color: #f9fcff;
-    padding: 10px;
-    height: calc(100vh - 60px);
-    transition: width 0.3s ease;
+    width: var(--sidebar-width);
+    background-color: var(--primary-bg);
+    padding: var(--sidebar-padding);
+    height: calc(100vh - var(--topbar-height));
+    transition: width var(--transition-normal);
+    flex: 1;
+    position: sticky;
+    top: 50px;
 
     &.collapsed {
-        width: 60px;
+        width: var(--sidebar-collapsed-width);
     }
-}
 
-.toggle-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 10px;
+    .CollapseBtn {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: var(--spacing-md);
 
-    &:hover {
-        background-color: #555;
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            padding: var(--spacing-md);
+            background-color: var(--accent-primary);
+            color: var(--white);
+            border: none;
+            border-radius: var(--radius-full);
+            cursor: pointer;
+            transition: background-color var(--transition-normal);
+
+            &:hover {
+                background-color: var(--accent-hover);
+            }
+        }
     }
-}
 
-.menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+    .menuBox {
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-.category {
-    margin-bottom: 20px;
-    /* Space between categories */
-}
+        .category-title {
+            color: var(--text-secondary);
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-normal);
+            text-transform: uppercase;
+            padding: var(--spacing-xs) var(--spacing-md);
+            margin-bottom: 0;
+            margin-top: var(--spacing-lg);
 
-.category-title {
-    color: #888;
-    /* Gray color for category titles */
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 5px 10px;
-    margin-bottom: 5px;
-}
-
-.menu-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 6px;
-    color: #333;
-    margin-bottom: 15px;
-    cursor: pointer;
-
-    &:hover {
-        background-color: #e0e0e0;
-        border-radius: 8px;
+            &:not(:first-child) {
+                margin-top: var(--spacing-xl);
+            }
+        }
     }
-}
 
-.icon {
-    font-size: 20px;
-}
+    .menu_item {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-md);
+        padding: 6px 48px 6px 15px;
+        color: var(--text-primary);
+        margin: 0 var(--spacing-lg) var(--spacing-sm);
+        text-wrap: nowrap;
+        cursor: pointer;
 
-.label {
-    transition: opacity 0.2s ease;
-    /* Smooth fade for text */
-}
+        li {
+            display: flex;
+            align-items: center;
+            padding: 3px 0px;
+        }
 
-.sidebar.collapsed .label {
-    opacity: 0;
-    display: none;
+        &:hover {
+            background-color: var(--hover-bg);
+            border-radius: var(--radius-sm);
+        }
+
+        &.active {
+            background-color: var(--hover-bg);
+            border-radius: var(--radius-sm);
+        }
+
+        &.collapsed {
+            justify-content: center;
+            margin: 0;
+            margin-top: var(--spacing-lg);
+        }
+
+        .icon {
+            font-size: 20px; // Kept as px since it’s icon-specific
+            display: inline-block;
+            margin-right: var(--spacing-lg);
+
+            &.collapsed {
+                margin-right: 0;
+            }
+        }
+
+        .label {
+            transition: opacity var(--transition-fast);
+        }
+    }
+
+    &.collapsed {
+        .label {
+            opacity: 0;
+            display: none;
+        }
+    }
 }

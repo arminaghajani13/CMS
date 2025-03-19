@@ -1,8 +1,10 @@
 import React from 'react'
 import { Outlet } from 'react-router'
 
-export default function Peoducts() {
+export default function Products() {
     return (
-        <Outlet />
+        <>
+            <Outlet />
+        </>
     )
 }

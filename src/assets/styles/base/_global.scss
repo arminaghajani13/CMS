@@ -1,7 +1,7 @@
 html,
 body {
     direction: ltr;
-    font-family: "iranSans" !important;
+    font-family: "Noto Sans", sans-serif;
     scroll-behavior: smooth !important;
     -moz-font-feature-settings: "ss03";
     -webkit-font-feature-settings: "ss03";
@@ -11,7 +11,11 @@ body {
 .bodyStructure {
     display: flex;
     justify-content: space-between;
-    margin-top: 60px;
+}
+
+.mainContent {
+    width: 100%;
+    padding: 0 17px;
 }
 
 // .modal-backdrop {

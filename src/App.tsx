@@ -1,9 +1,8 @@
 import React from "react";
-import AppRouts from './components/routes/index'
+import MainContent from "./components/Layout/MainContent";
 import Topbar from "./components/Layout/Topbar";
 import Sidebar from "./components/Layout/Sidebar";
 
-import './assets/styles/main.scss'
 
 function App() {
   return (
@@ -11,7 +10,7 @@ function App() {
       <Topbar />
       <div className="bodyStructure">
         <Sidebar />
-        <AppRouts />
+        <MainContent />
       </div>
     </>
   );
